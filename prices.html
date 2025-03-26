@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AirCool</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <!-- Start of Navbar -->
+    <nav
+      class="bg-white border-gray-200 dark:bg-[#1d354b] dark:border-gray-700"
+    >
+      <div
+        class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
+      >
+        <a
+          href="index.html"
+          class="flex items-center space-x-3 rtl:space-x-reverse"
+        >
+          <img src="img/Aircool-logo-2.png" class="h-28" alt="AirCool Logo" />
+        </a>
+        <button
+          data-collapse-toggle="navbar-dropdown"
+          type="button"
+          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+          aria-controls="navbar-dropdown"
+          aria-expanded="false"
+        >
+          <span class="sr-only">Open main menu</span>
+          <svg
+            class="w-5 h-5"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 17 14"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M1 1h15M1 7h15M1 13h15"
+            />
+          </svg>
+        </button>
+        <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
+          <ul
+            class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-[#1d354b] md:dark:bg-[#1d354b] dark:border-gray-700"
+          >
+            <li>
+              <a
+                href="index.html"
+                class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="about.html"
+                class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                >About</a
+              >
+            </li>
+            <li>
+              <button
+                id="dropdownNavbarLink"
+                data-dropdown-toggle="dropdownNavbar"
+                class="flex items-center justify-between w-full py-2 px-3 bg-blue-700 rounded-sm md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500 dark:bg-blue-600 md:dark:bg-transparent"
+                aria-current="page"
+              >
+                Prices
+                <svg
+                  class="w-2.5 h-2.5 ms-2.5"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 10 6"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="m1 1 4 4 4-4"
+                  />
+                </svg>
+              </button>
+              <!-- Dropdown menu -->
+              <div
+                id="dropdownNavbar"
+                class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700 dark:divide-gray-600"
+              >
+                <ul
+                  class="py-2 text-sm text-gray-700 dark:text-gray-400"
+                  aria-labelledby="dropdownLargeButton"
+                >
+                  <li>
+                    <a
+                      href="prices.html"
+                      class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                      >See All</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="prices.html#install"
+                      class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                      >Installation Services</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="prices.html#repair"
+                      class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                      >Repair Services</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="prices.html#maintenance"
+                      class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                      >Maintenance</a
+                    >
+                  </li>
+                </ul>
+                <div class="py-1">
+                  <a
+                    href="prices.html#limited"
+                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
+                    >Limited
+                  </a>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <a
+                href="book.html"
+                class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                >Book</a
+              >
+            </li>
+            <li>
+              <a
+                href="FaQ.html"
+                class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                >FAQs</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- End of Navbar -->
+
+    <!-- Start of Prices Section -->
+    <section class="bg-gray-100 py-16">
+      <div class="max-w-6xl mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center text-[#1d354b] mb-8">
+          Our Pricing
+        </h2>
+
+        <!-- Installation Prices -->
+        <div id="install" class="mb-12">
+          <h3 class="text-2xl font-semibold text-[#1d354b] mb-4">
+            Installation Services
+          </h3>
+          <div class="grid md:grid-cols-3 gap-6">
+            <div
+              class="hover:-translate-y-2 transition bg-white shadow-md rounded-lg p-6 text-center"
+            >
+              <img
+                src="https://www.distributorsappliancesale.com/cdn/shop/products/DigitalControl_4_1800x1800.webp?v=1673421193"
+                alt="Window Type AC"
+                class="w-32 h-32 mx-auto"
+              />
+              <h4 class="text-xl font-medium text-gray-800 mt-4">
+                Window Type AC
+              </h4>
+              <p class="text-lg text-gray-600 my-2">
+                Starting at <span class="font-semibold">₱3,500</span>
+              </p>
+            </div>
+            <div
+              class="hover:-translate-y-2 transition bg-white shadow-md rounded-lg p-6 text-center"
+            >
+              <img
+                src="https://www.lg.com/content/dam/channel/wcms/ph/images/residential-air-conditioners/hsn24isy2_attglcp_eacm_ph_c/gallery-1/DZ-05.jpg"
+                alt="Split Type AC"
+                class="w-32 h-32 mx-auto"
+              />
+              <h4 class="text-xl font-medium text-gray-800 mt-4">
+                Split Type AC
+              </h4>
+              <p class="text-lg text-gray-600 my-2">
+                Starting at <span class="font-semibold">₱5,000</span>
+              </p>
+            </div>
+            <div
+              class="hover:-translate-y-2 transition bg-white shadow-md rounded-lg p-6 text-center"
+            >
+              <img
+                src="https://5.imimg.com/data5/QA/BH/GLADMIN-12912905/central-air-conditioning-system-500x500.jpg"
+                alt="Centralized AC"
+                class="w-32 h-32 mx-auto"
+              />
+              <h4 class="text-xl font-medium text-gray-800 mt-4">
+                Centralized AC
+              </h4>
+              <p class="text-lg text-gray-600 my-2">Custom Pricing</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Repair Prices -->
+        <div id="repair" class="mb-12">
+          <h3 class="text-2xl font-semibold text-[#1d354b] mb-4">
+            Repair Services
+          </h3>
+          <div class="grid md:grid-cols-3 gap-6">
+            <div
+              class="hover:-translate-y-2 transition bg-white shadow-md rounded-lg p-6 text-center"
+            >
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQWmsNsFJYFJYlRaEtQ66BgqsZuMcS6fwb4g&s"
+                alt="Leak Repair"
+                class="w-32 h-32 mx-auto"
+              />
+              <h4 class="text-xl font-medium text-gray-800 mt-4">
+                Leak Repair
+              </h4>
+              <p class="text-lg text-gray-600 my-2">
+                Starting at <span class="font-semibold">₱1,500</span>
+              </p>
+            </div>
+            <div
+              class="hover:-translate-y-2 transition bg-white shadow-md rounded-lg p-6 text-center"
+            >
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3FrFK6g0voXcg7Nt-Eax1KCIBQpcY-lH7rYccwvHpJQx6lWnWL5nNQK02HH63waZOQ4s&usqp=CAU"
+                alt="Gas Refilling"
+                class="w-32 h-32 mx-auto"
+              />
+              <h4 class="text-xl font-medium text-gray-800 mt-4">
+                Technology Repair
+              </h4>
+              <p class="text-lg text-gray-600 my-2">
+                Starting at <span class="font-semibold">₱2,000</span>
+              </p>
+            </div>
+            <div
+              class="hover:-translate-y-2 transition bg-white shadow-md rounded-lg p-6 text-center"
+            >
+              <img
+                src="https://img.lazcdn.com/g/p/57590554495258cbd25975bba7aca5c6.jpg_720x720q80.jpg"
+                alt="Motor Replacement"
+                class="w-32 h-32 mx-auto"
+              />
+              <h4 class="text-xl font-medium text-gray-800 mt-4">
+                Motor Replacement
+              </h4>
+              <p class="text-lg text-gray-600 my-2">
+                Starting at <span class="font-semibold">₱3,500</span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Maintenance Prices -->
+        <div id="maintenance" class="mb-12">
+          <h3 class="text-2xl font-semibold text-[#1d354b] mb-4">
+            Maintenance Services
+          </h3>
+          <div class="grid md:grid-cols-3 gap-6">
+            <div
+              class="hover:-translate-y-2 transition bg-white shadow-md rounded-lg p-6 text-center"
+            >
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyMabHEhMFm2M-4QeNepSH95k5TXj65tHuxQ&s"
+                alt="Basic Cleaning"
+                class="w-32 h-32 mx-auto"
+              />
+              <h4 class="text-xl font-medium text-gray-800 mt-4">
+                Basic Cleaning
+              </h4>
+              <p class="text-lg text-gray-600 my-2">₱800 per unit</p>
+            </div>
+            <div
+              class="hover:-translate-y-2 transition bg-white shadow-md rounded-lg p-6 text-center"
+            >
+              <img
+                src="https://i.ytimg.com/vi/s6NHxfKUkUo/maxresdefault.jpg"
+                alt="Deep Cleaning"
+                class="w-32 h-32 mx-auto"
+              />
+              <h4
+                class="hover:-translate-y-2 transition text-xl font-medium text-gray-800 mt-4"
+              >
+                Deep Cleaning
+              </h4>
+              <p class="text-lg text-gray-600 my-2">₱1,500 per unit</p>
+            </div>
+            <div class="bg-white shadow-md rounded-lg p-6 text-center">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQy3GtyK1-XQ1QCbtu4EDym-gLaqTi8LoKMA&s"
+                alt="Monthly Maintenance"
+                class="w-32 h-32 mx-auto"
+              />
+              <h4 class="text-xl font-medium text-gray-800 mt-4">
+                Monthly Maintenance
+              </h4>
+              <p class="text-lg text-gray-600 my-2">₱14,999</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Second Hand Prices -->
+        <div id="limited" class="mb-12">
+          <h3 class="text-2xl font-semibold text-[#1d354b] mb-4">
+            Limited Second Hand Air Conditioners
+          </h3>
+          <div class="grid md:grid-cols-3 gap-6">
+            <div
+              class="hover:-translate-y-2 transition bg-white shadow-md rounded-lg p-6 text-center"
+            >
+              <img
+                src="https://www.shop-mideaphilippines.com/cdn/shop/products/2_d1287216-5777-4ddb-8723-5d4baae4972e.jpg?v=1679375534"
+                alt="midea-2ndhand"
+                class="w-32 h-32 mx-auto"
+              />
+              <h4 class="text-xl font-medium text-gray-800 mt-4">
+                Midea GenesisPro High Wall Inverter R32 1.5 HP
+              </h4>
+              <p class="text-lg text-gray-600 my-2">₱15,000</p>
+            </div>
+            <div
+              class="hover:-translate-y-2 transition bg-white shadow-md rounded-lg p-6 text-center"
+            >
+              <img
+                src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcT8OFTfEqrFToNqt5-1AFfoUNMifVoPbE4mcFmwDy-o5XrtcTpukeZvtvGjeCblHl5EbOj4IRca0cWOGylJMVXwhbH8pJGWPk4rrhMj1s1TNomzA5L5b-lXMQ&usqp=CAE"
+                alt="samsung-2ndhand"
+                class="w-32 h-32 mx-auto"
+              />
+              <h4 class="text-xl font-medium text-gray-800 mt-4">
+                SAMSUNG S 1HP TO 2HP DIGITAL INVERTER
+              </h4>
+              <p class="text-lg text-gray-600 my-2">₱10,500</p>
+            </div>
+            <div
+              class="hover:-translate-y-2 transition bg-white shadow-md rounded-lg p-6 text-center"
+            >
+              <img
+                src="https://jnrappliances.com.ph/wp-content/uploads/2021/11/CARRIER-WCARH019EEV-2HP-Window-Type-Aircon-Inverter.png"
+                alt="Monthly Maintenance"
+                class="w-32 h-32 mx-auto"
+              />
+              <h4 class="text-xl font-medium text-gray-800 mt-4">
+                CARRIER WCARH019EEV 2HP Window Type Aircon Inverter
+              </h4>
+              <p class="text-lg text-gray-600 my-2">₱30,500</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Call to Action -->
+        <div class="text-center mt-8">
+          <a
+            href="book.html"
+            class="bg-[#1d354b] text-white px-6 py-3 rounded-lg shadow-md hover:bg-blue-700 transition"
+          >
+            Book a Service Now
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- End of Prices Section -->
+
+    <!-- Start of Footer -->
+    <footer class="bg-[#1d354b] text-white py-8 text-center">
+      <div class="max-w-screen-xl mx-auto px-6 md:px-12">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div>
+            <h3 class="text-xl font-semibold mb-3 mt-2">Contact Us</h3>
+            <p class="text-gray-300">📍 123 Cooling St, AirCity</p>
+            <p class="text-gray-300">📞 (123) 456-7890</p>
+            <p class="text-gray-300">✉️ support@aircool.com</p>
+            <div class="flex space-x-4 mt-4">
+              <a href="#" class="hover:text-blue-400"
+                ><i class="fab fa-facebook"></i
+              ></a>
+              <a href="#" class="hover:text-blue-400"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a href="#" class="hover:text-blue-400"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </div>
+          </div>
+          <!-- Company Info -->
+          <div>
+            <img
+              src="img/Aircool-logo-2.png"
+              alt="AirCool Logo"
+              class="h-16 mb-2 flex mx-auto"
+            />
+            <p class="text-gray-300">
+              Providing top-notch air conditioning services to keep you cool and
+              comfortable.
+            </p>
+          </div>
+
+          <!-- Quick Links -->
+
+          <!-- Contact Info -->
+          <div>
+            <h3 class="text-xl font-semibold mb-3 mt-2">Business Hours</h3>
+            <p class="text-gray-300">8:00 am - 5:00pm</p>
+          </div>
+        </div>
+
+        <div
+          class="border-t border-gray-700 mt-6 pt-4 text-center text-gray-400 text-sm"
+        >
+          © 2025 AirCool. All Rights Reserved.
+        </div>
+      </div>
+    </footer>
+    <!-- End of Footer -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
+  </body>
+</html>

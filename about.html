@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AirCool</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <!-- Start of Navbar -->
+    <nav
+      class="bg-white border-gray-200 dark:bg-[#1d354b] dark:border-gray-700"
+    >
+      <div
+        class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
+      >
+        <a
+          href="index.html"
+          class="flex items-center space-x-3 rtl:space-x-reverse"
+        >
+          <img src="img/Aircool-logo-2.png" class="h-28" alt="AirCool Logo" />
+        </a>
+        <button
+          data-collapse-toggle="navbar-dropdown"
+          type="button"
+          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+          aria-controls="navbar-dropdown"
+          aria-expanded="false"
+        >
+          <span class="sr-only">Open main menu</span>
+          <svg
+            class="w-5 h-5"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 17 14"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M1 1h15M1 7h15M1 13h15"
+            />
+          </svg>
+        </button>
+        <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
+          <ul
+            class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-[#1d354b] md:dark:bg-[#1d354b] dark:border-gray-700"
+          >
+            <li>
+              <a
+                href="index.html"
+                class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="about.html"
+                class="block py-2 px-3 text-white bg-blue-700 rounded-sm md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500 dark:bg-blue-600 md:dark:bg-transparent"
+                aria-current="page"
+                >About</a
+              >
+            </li>
+            <li>
+              <button
+                id="dropdownNavbarLink"
+                data-dropdown-toggle="dropdownNavbar"
+                class="flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent"
+              >
+                Prices
+                <svg
+                  class="w-2.5 h-2.5 ms-2.5"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 10 6"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="m1 1 4 4 4-4"
+                  />
+                </svg>
+              </button>
+              <!-- Dropdown menu -->
+              <div
+                id="dropdownNavbar"
+                class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700 dark:divide-gray-600"
+              >
+                <ul
+                  class="py-2 text-sm text-gray-700 dark:text-gray-400"
+                  aria-labelledby="dropdownLargeButton"
+                >
+                  <li>
+                    <a
+                      href="prices.html"
+                      class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                      >See All</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="prices.html#install"
+                      class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                      >Installation Services</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="prices.html#repair"
+                      class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                      >Repair Services</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="prices.html#maintenance"
+                      class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                      >Maintenance</a
+                    >
+                  </li>
+                </ul>
+                <div class="py-1">
+                  <a
+                    href="prices.html#limited"
+                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
+                    >Limited
+                  </a>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <a
+                href="book.html"
+                class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                >Book</a
+              >
+            </li>
+            <li>
+              <a
+                href="FaQ.html"
+                class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                >FAQs</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- End of Navbar -->
+
+    <!-- About Section -->
+    <section
+      class="py-16 bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-white px-6"
+    >
+      <div class="max-w-screen-xl mx-auto text-center">
+        <h1 class="text-4xl font-bold text-blue-600 dark:text-blue-400 mb-6">
+          About AirCool
+        </h1>
+        <p class="text-lg leading-relaxed max-w-3xl mx-auto">
+          At AirCool, we go beyond cooling because we create
+          <b>cooling comfort</b>. Our expert team specializes in top-quality air
+          conditioning installation, maintenance, and repair, ensuring
+          efficiency and reliability in every space. We keep your environment
+          cool, fresh, and worry-free because we are committed to give our
+          exceptional service and energy-efficient solutions while giving
+          satisfying customer service.
+        </p>
+      </div>
+    </section>
+
+    <section class="bg-gray-200">
+      <img src="img/about-img.png" alt="" class="h-80 flex mx-auto py-5" />
+    </section>
+
+    <!-- Mission and Vision Section -->
+    <section class="py-16 bg-white dark:bg-gray-800 px-6">
+      <div
+        class="max-w-screen-xl mx-auto flex flex-col md:flex-row items-center text-center md:text-left gap-8"
+      >
+        <!-- Our Mission -->
+        <div class="w-full md:w-1/2">
+          <h2
+            class="text-3xl font-semibold text-blue-600 dark:text-blue-400 mb-4 text-center"
+          >
+            Our Mission
+          </h2>
+          <p class="text-lg leading-relaxed text-white mb-3">
+            To provide high-quality, energy-efficient air conditioning solutions
+            that ensure comfort, reliability, and sustainability for homes and
+            businesses. We are committed to excellent customer service, expert
+            installations, and innovative climate control technologies.
+          </p>
+          <hr />
+        </div>
+
+        <!-- Our Vision -->
+        <div class="w-full md:w-1/2">
+          <h2
+            class="text-3xl font-semibold text-blue-600 dark:text-blue-400 mb-4 text-center"
+          >
+            Our Vision
+          </h2>
+          <p class="text-lg leading-relaxed text-white mb-3">
+            To be the leading provider of air conditioning services, recognized
+            for innovation, eco-friendly solutions, and customer satisfaction.
+            We aim to create a healthier and more comfortable environment for
+            our clients while embracing sustainable practices.
+          </p>
+
+          <hr />
+        </div>
+      </div>
+    </section>
+
+    <!-- Start of Footer -->
+    <footer class="bg-[#1d354b] text-white py-8 text-center">
+      <div class="max-w-screen-xl mx-auto px-6 md:px-12">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div>
+            <h3 class="text-xl font-semibold mb-3 mt-2">Contact Us</h3>
+            <p class="text-gray-300">📍 123 Cooling St, AirCity</p>
+            <p class="text-gray-300">📞 (123) 456-7890</p>
+            <p class="text-gray-300">✉️ support@aircool.com</p>
+            <div class="flex space-x-4 mt-4">
+              <a href="#" class="hover:text-blue-400"
+                ><i class="fab fa-facebook"></i
+              ></a>
+              <a href="#" class="hover:text-blue-400"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a href="#" class="hover:text-blue-400"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </div>
+          </div>
+          <!-- Company Info -->
+          <div>
+            <img
+              src="img/Aircool-logo-2.png"
+              alt="AirCool Logo"
+              class="h-16 mb-2 flex mx-auto"
+            />
+            <p class="text-gray-300">
+              Providing top-notch air conditioning services to keep you cool and
+              comfortable.
+            </p>
+          </div>
+
+          <!-- Quick Links -->
+
+          <!-- Contact Info -->
+          <div>
+            <h3 class="text-xl font-semibold mb-3 mt-2">Business Hours</h3>
+            <p class="text-gray-300">8:00 am - 5:00pm</p>
+          </div>
+        </div>
+
+        <div
+          class="border-t border-gray-700 mt-6 pt-4 text-center text-gray-400 text-sm"
+        >
+          © 2025 AirCool. All Rights Reserved.
+        </div>
+      </div>
+    </footer>
+    <!-- End of Footer -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
+  </body>
+</html>
